@@ -13,7 +13,7 @@ const getAllSurveys = async (req, res) => {
 };
 
 const addSurvey = async (req, res) => {
-  const { fullname, course, gender, answers } = req.body;
+  const { fullname, email, course, gender, answers } = req.body;
 
   try {
     const createdAt = new Date();
@@ -32,6 +32,7 @@ const addSurvey = async (req, res) => {
 
     const newSurvey = await surveyModel.create({
       fullname: fullname,
+      email: email,
       course: course,
       gender: gender,
       answers: answers,
