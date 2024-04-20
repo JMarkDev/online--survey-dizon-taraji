@@ -62,14 +62,14 @@ const getSurveyById = async (req, res) => {
 const getAllTotalResponses = async (req, res) => {
   const { year } = req.params;
   const course = [
-    "ACT",
     "BSCS",
-    "BSED",
+    "ACT",
+    "BSED-ENGLISH",
+    "BSED-SCIENCE",
     "BEED",
     "BSSW",
-    "BSPOLSCIE",
+    "AB-POLSCIE",
     "BSCRIM",
-    "AB FIL",
   ];
   const months = [
     "Jan",
